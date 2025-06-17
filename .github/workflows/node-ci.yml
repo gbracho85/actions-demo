@@ -15,7 +15,7 @@ jobs:
     
     steps:
       - name: Mostrar entorno actual
-        run: echo "Entorno actual: $NODE_ENV"
+        run: echo "Entorno actual $NODE_ENV"
       
       - name: Clonar repositorio
         uses: actions/checkout@v3
