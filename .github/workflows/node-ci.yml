@@ -10,6 +10,9 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     steps:
+      - name: Ver entorno
+        run: echo "Entorno actual: ${{ secrets.NODE_ENV }}"
+        
       - name: Clonar repositorio
         uses: actions/checkout@v3
 
